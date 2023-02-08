@@ -6,7 +6,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.Assert;
-import org.junit.Assert.*;
 import PageObject.mainPage;
 import PageObject.orderPage;
 import PageObject.rentPage;

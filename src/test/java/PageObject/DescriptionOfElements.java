@@ -8,14 +8,6 @@ public class DescriptionOfElements {
     //Кнопка "Заказать" на самой странице - orderInPage - By.className("Button_Middle__1CSJM")
 
     //Блок "Вопросы о важном"
-    //Вопрос 1 - question1 - By.id("accordion__heading-0")
-    //Вопрос 2 - question2 - By.id("accordion__heading-1")
-    //Вопрос 3 - question2 - By.id("accordion__heading-2")
-    //Вопрос 4 - question2 - By.id("accordion__heading-3")
-    //Вопрос 5 - question2 - By.id("accordion__heading-4")
-    //Вопрос 6 - question2 - By.id("accordion__heading-5")
-    //Вопрос 7 - question2 - By.id("accordion__heading-6")
-    //Вопрос 8 - question2 - By.id("accordion__heading-7")
 
     //Форма заказа
     //Поле "Имя" - name - By.xpath(".//input[contains(@placeholder, '* Имя')]")
