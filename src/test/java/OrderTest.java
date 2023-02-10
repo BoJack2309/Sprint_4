@@ -6,9 +6,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.Assert;
-import PageObject.mainPage;
-import PageObject.orderPage;
-import PageObject.rentPage;
+import PageObject.MainPage;
+import PageObject.OrderPage;
+import PageObject.RentPage;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
@@ -50,7 +50,7 @@ public class OrderTest {
     @Test
     public void checkOrderSuccess() {
 
-        mainPage objMainPage = new mainPage(driver);
+        MainPage objMainPage = new MainPage(driver);
 
         driver.get("https://qa-scooter.praktikum-services.ru/");
         //Ожидание загрузки браузера
@@ -64,11 +64,11 @@ public class OrderTest {
             objMainPage.clickOrderButtonInPage();
         }
 
-        orderPage objOrderPage = new orderPage(driver);
+        OrderPage objOrderPage = new OrderPage(driver);
         objOrderPage.setOrderForm(_name, _surname, _adress, _metro, _phone);
         objOrderPage.clickNextButton();
 
-        rentPage objRentPage = new rentPage(driver);
+        RentPage objRentPage = new RentPage(driver);
         objRentPage.setRentForm(_date, _rent);
         boolean actual = objRentPage.checkIfOrderSuccess();
 

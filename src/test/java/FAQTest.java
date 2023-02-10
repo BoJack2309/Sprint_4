@@ -5,7 +5,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.junit.After;
 import org.junit.Test;
-import PageObject.mainPage;
+import PageObject.MainPage;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
@@ -38,7 +38,7 @@ public class FAQTest {
     @Test
     public void checkFAQIsCorrect() {
 
-        mainPage objMainPage = new mainPage(driver);
+        MainPage objMainPage = new MainPage(driver);
         driver.get("https://qa-scooter.praktikum-services.ru");
         //Ожидание загрузки браузера
         new WebDriverWait(driver, 60)

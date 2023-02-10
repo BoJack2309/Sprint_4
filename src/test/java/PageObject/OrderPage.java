@@ -1,11 +1,10 @@
 package PageObject;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.By;
 
 //Класс со страницей оформления заказа
-public class orderPage {
+public class OrderPage {
 
     private WebDriver driver;
     private By name = By.xpath(".//input[contains(@placeholder, '* Имя')]");
@@ -15,7 +14,7 @@ public class orderPage {
     private By phone = By.xpath(".//input[contains(@placeholder, '* Телефон: на него позвонит курьер')]");
     private By nextButton = By.xpath(".//button[text() = 'Далее']");
 
-    public orderPage(WebDriver driver) {
+    public OrderPage(WebDriver driver) {
         this.driver = driver;
     }
 

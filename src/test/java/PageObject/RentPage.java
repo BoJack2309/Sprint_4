@@ -1,11 +1,10 @@
 package PageObject;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.By;
 
 //Класс для формы "Про аренду"
-public class rentPage {
+public class RentPage {
 
     private WebDriver driver;
 
@@ -20,7 +19,7 @@ public class rentPage {
     private By yesButton = By.xpath(".//button[text() = 'Да']");
     private By orderSuccess = By.className("Order_ModalHeader__3FDaJ");
 
-    public rentPage(WebDriver driver) {
+    public RentPage(WebDriver driver) {
         this.driver = driver;
     }
 

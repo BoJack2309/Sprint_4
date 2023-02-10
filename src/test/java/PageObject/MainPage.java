@@ -1,20 +1,17 @@
 package PageObject;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 //Класс главной страницы
-public class mainPage {
+public class MainPage {
     private WebDriver driver;
     private By Cookie = By.id("rcc-confirm-button");
     private By homeHeader = By.className("Home_Header__iJKdX");
     private By orderInHead = By.className("Button_Button__ra12g");
     private By orderInPage = By.className("Button_Middle__1CSJM");
 
-    public mainPage(WebDriver driver) {
+    public MainPage(WebDriver driver) {
         this.driver = driver;
     }
 
